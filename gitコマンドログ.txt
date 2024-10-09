@@ -1,0 +1,459 @@
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$ git --version
+git version 2.46.2.windows.1
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$ git config
+error: no action specified
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$ git config ?
+error: key does not contain a section: ?
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$ git config
+error: no action specified
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=nakashin5959
+user.email=shin.nakamura@ntt.com
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$ pwd
+/c/Users/3259913
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$ mkdir html
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~
+$ cd html
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html
+$ git init
+Initialized empty Git repository in C:/Users/3259913/html/.git/
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ ls -a
+./  ../  .git/
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git add .
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   styles.css
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git commit -m "index,html stykes.css 作成"
+[master (root-commit) 3bdb851] index,html stykes.css 作成
+ 2 files changed, 2 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git show
+commit 3bdb851a1523b05084a1fed95de8f4b4de2faf93 (HEAD -> master)
+Author: nakashin5959 <shin.nakamura@ntt.com>
+Date:   Wed Oct 9 10:24:48 2024 +0900
+
+    index,html stykes.css 作成
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..8c7fe21
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,2 @@
++<html>
++</html>
+\ No newline at end of file
+diff --git a/styles.css b/styles.css
+new file mode 100644
+index 0000000..e69de29
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git log
+commit 3bdb851a1523b05084a1fed95de8f4b4de2faf93 (HEAD -> master)
+Author: nakashin5959 <shin.nakamura@ntt.com>
+Date:   Wed Oct 9 10:24:48 2024 +0900
+
+    index,html stykes.css 作成
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git show
+commit 3bdb851a1523b05084a1fed95de8f4b4de2faf93 (HEAD -> master)
+Author: nakashin5959 <shin.nakamura@ntt.com>
+Date:   Wed Oct 9 10:24:48 2024 +0900
+
+    index,html stykes.css 作成
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..8c7fe21
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,2 @@
++<html>
++</html>
+\ No newline at end of file
+diff --git a/styles.css b/styles.css
+new file mode 100644
+index 0000000..e69de29
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git add .
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   styles.css
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git commit -m "titleタグとhtmlのスタイルを追加"
+[master 7c6fe6b] titleタグとhtmlのスタイルを追加
+ 2 files changed, 4 insertions(+)
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git log
+commit 7c6fe6b5318d321cdb104bb717e5aecbc631ca1a (HEAD -> master)
+Author: nakashin5959 <shin.nakamura@ntt.com>
+Date:   Wed Oct 9 10:32:11 2024 +0900
+
+    titleタグとhtmlのスタイルを追加
+
+commit 3bdb851a1523b05084a1fed95de8f4b4de2faf93
+Author: nakashin5959 <shin.nakamura@ntt.com>
+Date:   Wed Oct 9 10:24:48 2024 +0900
+
+    index,html stykes.css 作成
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git show
+commit 7c6fe6b5318d321cdb104bb717e5aecbc631ca1a (HEAD -> master)
+Author: nakashin5959 <shin.nakamura@ntt.com>
+Date:   Wed Oct 9 10:32:11 2024 +0900
+
+    titleタグとhtmlのスタイルを追加
+
+diff --git a/index.html b/index.html
+index 8c7fe21..4682c57 100644
+--- a/index.html
++++ b/index.html
+@@ -1,2 +1,3 @@
+ <html>
++       <titel>gitレクチャー</title>
+ </html>
+\ No newline at end of file
+diff --git a/styles.css b/styles.css
+index e69de29..974c751 100644
+--- a/styles.css
++++ b/styles.css
+@@ -0,0 +1,3 @@
++html {
++       font-size: 20em;
++}
+\ No newline at end of file
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git diff
+diff --git a/index.html b/index.html
+index 4682c57..85e95c6 100644
+--- a/index.html
++++ b/index.html
+@@ -1,3 +1,4 @@
+ <html>
++       <meta charset="UTF-8">
+        <titel>gitレクチャー</title>
+ </html>
+\ No newline at end of file
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git add .
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git diff
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git diff  --cached
+diff --git a/index.html b/index.html
+index 4682c57..85e95c6 100644
+--- a/index.html
++++ b/index.html
+@@ -1,3 +1,4 @@
+ <html>
++       <meta charset="UTF-8">
+        <titel>gitレクチャー</title>
+ </html>
+\ No newline at end of file
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git add .
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    styles.css
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git add .
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        deleted:    styles.css
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git commit -m "index.htmlにメタタグを追加"
+[master f47dd84] index.htmlにメタタグを追加
+ 2 files changed, 2 insertions(+), 3 deletions(-)
+ delete mode 100644 styles.css
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git remote add origin https://github.com/nakashin5959/html.git
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (master)
+$ git branch -M main
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git push -u origin main
+fatal: unable to access 'https://github.com/nakashin5959/html.git/': SSL certificate problem: unable to get local issuer certificate
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ ^C
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git config --global https.sslVerify false
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git push -u origin main
+fatal: unable to access 'https://github.com/nakashin5959/html.git/': SSL certificate problem: unable to get local issuer certificate
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git config --global http.sslVerify false
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git push -u origin main
+warning: ----------------- SECURITY WARNING ----------------
+warning: | TLS certificate verification has been disabled! |
+warning: ---------------------------------------------------
+warning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.
+warning: ----------------- SECURITY WARNING ----------------
+warning: | TLS certificate verification has been disabled! |
+warning: ---------------------------------------------------
+warning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (11/11), 1018 bytes | 1018.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nakashin5959/html.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git add .
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   styles.css
+
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git commit -m "styles.css 追加"
+[main 16d2d09] styles.css 追加
+ 1 file changed, 3 insertions(+)
+ create mode 100644 styles.css
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nakashin5959/html.git
+   f47dd84..16d2d09  main -> main
+branch 'main' set up to track 'origin/main'.
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
