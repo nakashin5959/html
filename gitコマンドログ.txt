@@ -457,3 +457,51 @@ To https://github.com/nakashin5959/html.git
 branch 'main' set up to track 'origin/main'.
 
 AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignor.txt
+        "git\343\202\263\343\203\236\343\203\263\343\203\211\343\203\255\343\202\260.txt"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git add .
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$ git commit -m ".gitignore追加"
+[main 0eec3bf] .gitignore追加
+ 2 files changed, 459 insertions(+)
+ create mode 100644 .gitignore.txt
+ create mode 100644 "git\343\202\263\343\203\236\343\203\263\343\203\211\343\203\255\343\202\260.txt"
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$
+
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    .gitignore.txt
+        modified:   "git\343\202\263\343\203\236\343\203\263\343\203\211\343\203\255\343\202\260.txt"
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+AzureAD+ShingoNakamura（中村真悟）@A1004773-uno-nakamura MINGW64 ~/html (main)
+$
